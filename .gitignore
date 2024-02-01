@@ -1,5 +1,7 @@
 *.iml
 .gradle
+# Игнорировать папку .idea и ее содержимое
+.idea/
 /local.properties
 /.idea/caches
 /.idea/libraries
