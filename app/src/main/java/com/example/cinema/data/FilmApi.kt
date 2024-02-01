@@ -1,4 +1,4 @@
-package com.example.cinema.retrofit
+package com.example.cinema.data
 
 import retrofit2.http.GET
 import retrofit2.http.Path
