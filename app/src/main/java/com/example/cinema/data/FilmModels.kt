@@ -3,7 +3,7 @@ package com.example.cinema.data
 data class FilmResponse(
     val success: Boolean,
     val reason: String,
-    val film: Film
+    val films: List<Film>
 )
 
 data class Film(
