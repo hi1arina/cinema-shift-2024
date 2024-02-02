@@ -4,6 +4,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.cinema.R
 import com.example.cinema.data.Film
 import com.example.cinema.data.FilmResponse
@@ -22,8 +23,15 @@ class AfficheAdapter : RecyclerView.Adapter<AfficheAdapter.Holder>() {
         private val binding = ListItemBinding.bind(view)
 
         fun bind(film: Film) = with(binding) {
+
+            cover.setImageDrawable(null)
             title.text = film.name
             country.text = film.country.name
+            year.text = film.releaseDate
+            kinopoisk.text = "Кинопоиск " + film.userRatings.kinopoisk
+            Glide.with(itemView.context)
+                .load("https://shift-backend.onrender.com${film.img}")
+                .into(cover)
         }
     }
 

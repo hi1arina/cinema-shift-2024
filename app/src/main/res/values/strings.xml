@@ -3,4 +3,6 @@
     <string name="cover">Cover</string>
     <string name="title_place_holder">Title Place Holder</string>
     <string name="country_placeholder">Country PlaceHolder</string>
+    <string name="year_placeholder">Year PlaceHolder</string>
+    <string name="kinopoisk_placeholder">Kinopoisk PlaceHolder</string>
 </resources>
