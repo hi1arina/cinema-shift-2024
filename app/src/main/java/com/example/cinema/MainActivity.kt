@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.cinema.data.FilmRepository
 import com.example.cinema.databinding.ActivityMainBinding
@@ -27,13 +28,11 @@ class MainActivity : AppCompatActivity() {
         binding.rcView.adapter = adapter
         val repository = FilmRepository()
 
-        CoroutineScope(Dispatchers.IO).launch {
+        lifecycleScope.launch {
             try {
                 val films = repository.getFilmToday()
                 Log.d("FilmList", "FilmResponse: $films")
-                withContext(Dispatchers.Main) {
-                    adapter.setFilms(films.films)
-                }
+                adapter.setFilms(films.films)
             } catch (e: Exception) {
                 Log.e("FilmList", "Error: ${e.message}", e)
             }

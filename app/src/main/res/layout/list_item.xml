@@ -32,7 +32,7 @@
                     android:contentDescription="@string/cover"/>
 
                 <TextView
-                    android:id="@+id/year"
+                    android:id="@+id/releaseDate"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="end|bottom"
