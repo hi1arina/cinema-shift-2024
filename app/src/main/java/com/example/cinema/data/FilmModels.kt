@@ -1,4 +1,4 @@
-package com.example.cinema.retrofit
+package com.example.cinema.data
 
 data class FilmResponse(
     val success: Boolean,
