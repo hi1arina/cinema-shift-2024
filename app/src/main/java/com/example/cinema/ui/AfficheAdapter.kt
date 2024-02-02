@@ -28,7 +28,7 @@ class AfficheAdapter : RecyclerView.Adapter<AfficheAdapter.Holder>() {
             cover.setImageDrawable(null)
             title.text = film.name
             country.text = film.country.name
-            releaseDate.text = film.releaseDate
+            originalName.text = film.originalName
             kinopoisk.text = "Кинопоиск - ${film.userRatings.kinopoisk}"
             Glide.with(itemView.context)
                 .load("https://shift-backend.onrender.com${film.img}")

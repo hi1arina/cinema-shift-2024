@@ -1,4 +1,4 @@
-package com.example.cinema
+package com.example.cinema.ui
 
 import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity

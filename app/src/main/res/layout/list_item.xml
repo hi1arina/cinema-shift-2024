@@ -32,12 +32,12 @@
                     android:contentDescription="@string/cover"/>
 
                 <TextView
-                    android:id="@+id/releaseDate"
+                    android:id="@+id/country"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="end|bottom"
                     android:padding="20dp"
-                    android:text="@string/year_placeholder"
+                    android:text="@string/country_placeholder"
                     android:textColor="#000000"
                     android:background="#FFFFFF"
                     android:textSize="14sp"
@@ -64,11 +64,11 @@
                 android:layout_margin="16dp"/>
 
             <TextView
-                android:id="@+id/country"
+                android:id="@+id/originalName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="left|center"
-                android:text="@string/country_placeholder"
+                android:text="@string/originalName_placeholder"
                 android:textColor="@color/darkGray"
                 android:textSize="20sp"
                 android:lines="1"
