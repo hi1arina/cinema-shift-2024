@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="30dp"
+        android:layout_margin="20dp"
+        android:clickable="true"
+        app:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/cover"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/cover"/>
+
+                <TextView
+                    android:id="@+id/country"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|bottom"
+                    android:padding="20dp"
+                    android:text="@string/country_placeholder"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:gravity="right"
+                    android:includeFontPadding="false"
+                    android:outlineProvider="background"
+                    android:clipToOutline="true"
+                    android:maxLines="1"
+                    android:elevation="4dp" />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center"
+                android:text="@string/title_place_holder"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:lines="2"
+                android:textStyle="bold"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:id="@+id/originalName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center"
+                android:text="@string/originalName_placeholder"
+                android:textColor="@color/darkGray"
+                android:textSize="20sp"
+                android:lines="1"
+                android:layout_marginLeft="16dp"
+                />
+
+            <TextView
+                android:id="@+id/kinopoisk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center"
+                android:text="@string/kinopoisk_placeholder"
+                android:textColor="@color/darkGray"
+                android:textSize="20sp"
+                android:lines="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="30dp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -9,6 +9,6 @@ interface FilmApi {
     suspend fun getFilmById(@Path("filmId") id: String): FilmResponse
 
     @GET("/cinema/today")
-    suspend fun getFilmToday(): List<FilmResponse>
+    suspend fun getFilmToday(): FilmResponse
 
 }

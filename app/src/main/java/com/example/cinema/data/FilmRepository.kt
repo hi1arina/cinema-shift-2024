@@ -31,7 +31,7 @@ class FilmRepository {
         retrofit.create(FilmApi::class.java)
     }
 
-    suspend fun getFilmToday(): List<FilmResponse> =
+    suspend fun getFilmToday(): FilmResponse =
         filmApi.getFilmToday()
 
     suspend fun getFilmById(id: String): FilmResponse =
